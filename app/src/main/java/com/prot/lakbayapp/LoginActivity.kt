@@ -4,7 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.prot.lakbayapp.databinding.ActivityLoginBinding
+import com.example.lakbayapp.databinding.ActivityLoginBinding
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -28,9 +29,10 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        binding.registerButton.setOnClickListener {
+       binding.registerButton.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java) // Correct Activity name
-            startActivity(intent)
+            startActivity(intent)}
+
+
         }
     }
-}
